@@ -3,6 +3,8 @@
 // Time: O(n) -- n is number of nodes
 // Space: O(H) -- H is height of tree
 
+let stringTree = '';
+
 const preOrderTraversal = (rootNode) => {
   if(!rootNode) {
     return undefined;
@@ -16,14 +18,18 @@ const preOrderTraversal = (rootNode) => {
 
 //  Time: O(n) -- where n is the number of nodes
 // Space: 0(H)) -- where h is the height
+
+// wrap this in another function that doesn't get called recursive
 const inOrderTraversal = (rootNode) => {
   if(!rootNode) {
     return undefined;
   }
+  console.log(stringTree);
   inOrderTraversal(rootNode.left);
-  console.log(`Visiting a node with value ${rootNode.value}`);
+  stringTree = stringTree + `${rootNode.value}`;
+  // console.log(`Visiting a node with value ${rootNode.value}`);
   inOrderTraversal(rootNode.right);
-  return undefined;
+  // return undefined;
 }
 
 // Time: O(n) -- where n is the number of nodes
