@@ -35,13 +35,3 @@ inOrderTraversal(tree.root);
 console.log('Post-Order');
 postOrderTraversal(tree.root);
 
-
-
-// console.log("Pre-Order" + JSON.stringify(preOrderTraversal(tree)));
-// preOrderTraversal(tree.root);
-
-// console.log("In-Order" + JSON.stringify(inOrderTraversal(tree)));
-// inOrderTraversal(tree.root);
-
-// console.log("Post-Order" + JSON.stringify(postOrderTraversal(tree)));
-// postOrderTraversal(tree.root);
